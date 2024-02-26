@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flomduken - The Ultimate Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="ferdig logo.png" alt="Ferdig Logo" class="logo">
+        <h1>Welcome to Flomduken</h1>
+    </header>
+    <main>
+        <section class="product-display">
+            <h2>Flomduken - FREMTIDEN ER HER</h2>
+            <p>Discover the revolutionary new product...</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/D03KZvTXIjY" frameborder="0" allowfullscreen></iframe>
+            <a href="other-products.html" class="view-more-button">View More Products</a>
+        </section>
+
+        <section class="omkrets-input">
+            <h3>Kalkuler nødvendige lengde of duken til ditt hus</h3>
+            <form action="/calculate-omkrets" method="post">
+                <label for="omkrets">Oppgi omkretsen av huset ditt i meter :</label>
+                <input type="number" id="omkrets" name="omkrets" required>
+                <input type="submit" value="Submit">
+            </form>
+            <p id="omkrets-result"></p>
+        </section>
+
+        <section class="tilbud-input">
+            <h3>Pris tilbud fraFlomduken AS</h3>
+            <form action="/calculate-price" method="post">
+                <label for="quantity">Beregnet pris for deg:</label>
+                
+                <input type="submit" value="Show Price">
+            </form>
+            <p id="price-result"></p>
+        </section>
+
+        <section class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: contact@flomdukenas.no</p>
+            <p>Phone: 123-456-7890</p>
+            <address>
+                Flomduken AS.>
+                Høgskoleringen 5>
+                Trondheim, Norway
+            </address>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Flomduken AS.</p>
+    </footer>
+</body>
+</html>
